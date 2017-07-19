@@ -1,0 +1,69 @@
+div#freddy {
+    background-color: black;
+    border: 10px dotted blue;
+    border-radius:100%;
+    height: 100px;
+    width: 100px;
+}
+
+div#bonnie {
+    background-color: black;
+    border: 10px solid blue;
+    border-radius:100%;
+    height: 100px;
+    width: 100px;
+}
+
+div#chica {
+    background-color: black;
+    border: 10px dashed blue;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes freddy {
+    0%  {background-color:red; left:0px; top:0px;}
+    25% {background-color:yellow; left:200px; top:0px;}
+    50% {background-color:blue; left:200px; top:200px;}
+    75% {background-color: green; left:0px; top:200px;}
+    100% {background-color: red; left:0px; top:0px;}  
+}
+
+@keyframes bonnie {
+    from{background-color:purple ;}
+    to{background-color: red;}
+}
+
+@keyframes chica {
+    from{background-color:yellow ;}
+    to{background-color: pink;}
+}
+
+div#freddy:hover {
+    font-weight: bold;
+    box-shadow: 0 0 5px;
+    animation-name: freddy;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative
+}
+
+
+
+div#bonnie:hover {
+    font-weight: bold;
+    box-shadow: 0 0 5px;
+    animation-name: bonnie ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+div#chica:hover {
+    font-weight: bold;
+    box-shadow: 0 0 5px;
+    animation-name: chica;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
